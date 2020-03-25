@@ -1,16 +1,17 @@
-use strict';
+// server.js
 
-const express = require('express');
-
-// Constants
-const PORT = 8080;
-const HOST = '0.0.0.0';
-
-// App
+const express = require("express");
 const app = express();
-app.get('/', (req, res) => {
-  res.send('Hello World');
+const PORT = process.env.PORT = 8001;
+
+let router = express.Router();
+
+router.get('/',function(req,res){
+  res.json({'message' : 'Ping Successfull'});
 });
 
-app.listen(PORT, HOST);
-console.log(`Running on http://${HOST}:${PORT}`);
+app.use('/api',router);
+
+app.listen(PORT,function(){
+  console.log('Server is running at PORT:',PORT);
+});

@@ -1,13 +1,26 @@
 {
-  "name": "docker_web_app",
+  "name": "uservice",
   "version": "1.0.0",
-  "description": "Node.js on Docker",
-  "author": "First Last <first.last@example.com>",
+  "description": "My little u Service",
   "main": "server.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slbryson/uservice.git"
+  },
+  "keywords": [
+    "kube"
+  ],
+  "author": "Dr. Sidney L. Bryson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slbryson/uservice/issues"
+  },
+  "homepage": "https://github.com/slbryson/uservice#readme",
   "dependencies": {
-    "express": "^4.16.1"
+    "express": "^4.17.1"
   }
 }
