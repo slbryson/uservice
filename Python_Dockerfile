@@ -1,0 +1,7 @@
+FROM python:3
+ADD valuein.py /
+#ENTRYPOINT ["python valuein.py"]
+
+#CMD ["53", "23"]
+CMD []
+
